@@ -1,7 +1,7 @@
 ### Lonely-Crow
-Feito totalmente em python, conta com algumas funções como:
-• Mutar usuário por tempo determinado (minutos/horas)
-• Sistema de ticket
-• Apagar mensagens sem limite
-• Sistema de cargo por reação e mais...
+Feito totalmente em python, conta com algumas funções como:<br>
+• Mutar usuário por tempo determinado (minutos/horas)<br>
+• Sistema de ticket<br>
+• Apagar mensagens sem limite<br>
+• Sistema de cargo por reação e mais...<br>
 
