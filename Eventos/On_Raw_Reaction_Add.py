@@ -7,7 +7,7 @@ async def reactionadd(bot, reactionRole, reaction, ticketIds):
         ### SISTEMA DE CARGO POR REAÇÃO
         try:
             mensagemID = reactionRole[f'{reaction.guild_id}_mensagem']
-            mensagemID = ticketIds[f'{reaction.guild_id}_mensagem']
+            #mensagemID = ticketIds[f'{reaction.guild_id}_mensagem']
 
             if int(reaction.message_id) == int(mensagemID) and user.bot is False:
                 servidor = await bot.fetch_guild(reaction.guild_id)
@@ -26,7 +26,7 @@ async def reactionadd(bot, reactionRole, reaction, ticketIds):
                 mensagem = await canal.fetch_message(reaction.message_id)
                 await mensagem.remove_reaction(reaction.emoji, user)
                 return
-        except:
+        except Exception as e:
             pass
 
         ### SISTEMA DE TICKET
